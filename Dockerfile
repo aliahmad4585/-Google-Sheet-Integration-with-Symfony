@@ -18,6 +18,8 @@ RUN sed -i 's,^memory_limit =.*$,memory_limit = 8192M,' /usr/local/etc/php/php.i
 
 RUN sed -i 's,^memory_limit =.*$,memory_limit = 8192M,' /usr/local/etc/php/php.ini-production
 
+RUN echo 'memory_limit = 512M' >> /usr/local/etc/php/conf.d/docker-php-memlimit.ini
+
 COPY . /var/www
  
 WORKDIR /var/www
