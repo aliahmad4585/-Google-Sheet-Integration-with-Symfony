@@ -3,5 +3,6 @@ version: '3.8'
 services:
     web:
         build: .
+        mem_limit: 512m
         ports:
             - 8080:80
