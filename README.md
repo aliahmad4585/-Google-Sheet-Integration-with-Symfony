@@ -4,6 +4,13 @@ Write a command-line program, based on the Symfony CLI component (https://symfon
 # Important Note
 Currenty I've upload the .ENV file with all credentials for testing purpose. If you want add own google sheet credentials, replace the credentials in  .ENV file.
 
+# Google Sheet Link to view the results
+I've change the rights of this sheet so that every can view the following Google Sheet
+
+https://docs.google.com/spreadsheets/d/1nlMpbq-EC_QOHkRA9DyAibjDFKD_YzNvb4hcCTmajKc/edit?usp=sharing
+
+There are four sheets available in the above link. Change the name of the Sheet in ENV file that you want to use for testing.
+
 # Prerequisite
  1. PHP >= 8.1
  2. Symfony 6.1
