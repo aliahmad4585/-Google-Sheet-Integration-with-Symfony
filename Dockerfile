@@ -14,6 +14,10 @@ RUN wget https://getcomposer.org/download/2.0.9/composer.phar \
  
 COPY docker/apache.conf /etc/apache2/sites-enabled/000-default.conf
 
+RUN sed -i 's,^memory_limit =.*$,memory_limit = 8192M,' /usr/local/etc/php/php.ini-development
+
+RUN sed -i 's,^memory_limit =.*$,memory_limit = 8192M,' /usr/local/etc/php/php.ini-production
+
 COPY . /var/www
  
 WORKDIR /var/www
@@ -24,9 +28,5 @@ RUN php bin/console cache:clear
 
 #Run the unit test cases
 RUN php bin/phpunit
-
-RUN sed -i 's,^memory_limit =.*$,memory_limit = 8192M,' /usr/local/etc/php/php.ini-development
-
-RUN sed -i 's,^memory_limit =.*$,memory_limit = 8192M,' /usr/local/etc/php/php.ini-production
  
 CMD ["apache2-foreground"]
