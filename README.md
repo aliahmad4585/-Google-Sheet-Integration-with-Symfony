@@ -2,7 +2,7 @@
 Write a command-line program, based on the Symfony CLI component (https://symfony.com/doc/current/components/console.html). The program should process a local or remote XML file and push the data of that XML file to a Google Spreadsheet via the Google Sheets API (https://developers.google.com/sheets/)
 
 # Important Note
-Currenty I've upload the .ENV file with all credentials for testing purpose. If you want add own google sheet credentials, replace the credentials in  .ENV file.
+I've uploaded the .ENV file with all credentials for testing purpose. If you want to add own google sheet credentials, replace the credentials in  .ENV file.
 
 # Google Sheet Link to view the results
 I've change the rights of this sheet so that every can view the following Google Sheet
@@ -43,7 +43,7 @@ There are four sheets available in the above link. Change the name of the Sheet 
 
 If you guys want to test with my .ENV credentials then prefer to use the method 2.
 
-if you guys want to change the .ENV credentials then user Method 1.
+if you guys want to change the .ENV credentials then use the Method 1.
 
 
 
